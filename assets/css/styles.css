@@ -37,11 +37,10 @@ html {
 }
 
 body {
-  color: #d5d5d5;
+  color: #222;
   background-color: #F2F4F3;
   height: 100vh;
   font-family: 'GothamBook', sans-serif;
-  font-weight: 800;
 }
 
 h1 {
@@ -101,8 +100,4 @@ textarea {
 /* ==========================================================================
    Custom CSS: 
    ========================================================================== */
-.theme-dark {
-  background-color: #0c0f0e;
-  color: #d5d5d5;
-}
 /*# sourceMappingURL=styles.css.map */

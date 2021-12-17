@@ -39,7 +39,9 @@ $body-color: #F2F4F3;
 $effects-color: #A9927D;
 $text-color : #222;
 $mobile-max : 615px;
+$tablet-min : 616px;
 $tablet-max : 1023px;
+$desktop-min : 1024px;
 
 
 /********************************************* FUNCTIONS and MIXINS **************************************************/
@@ -72,20 +74,27 @@ $tablet-max : 1023px;
 
 @mixin mobile {
     @media screen and (max-width: $mobile-max ) {
-        @content;
-        img {
-          margin: auto;
-          width: 90%;
-          }      
+        @content; 
        }
 }
 
 @mixin tablet {
-    @media screen and (max-width: $tablet-max ) {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
         @content;
     }
 }
 
+@mixin aboveTablet {
+  @media screen and (min-width: $tablet-min) {
+      @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-min) {
+      @content;
+  }
+}
 
 /********************************************* RESETS **************************************************/
 * {
@@ -99,11 +108,11 @@ html {
 }
 
 body {
-  color: set-text-color($text-color);
+  color: $text-color;
   background-color: $body-color;
   height: 100vh;
   font-family: 'GothamBook', sans-serif;
-  font-weight: fontWeight(bold);
+  // font-weight: fontWeight(bold);
   // @include flexCenter;
   // @include mobile{
   //     flex-direction: column;
