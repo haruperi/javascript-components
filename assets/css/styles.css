@@ -168,6 +168,12 @@ hr {
   border: 1px solid #e4e4e4e1;
 }
 
+#demo {
+  height: 50px;
+  max-width: 100%;
+  background-color: red;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,6 +186,5 @@ footer {
 
 footer p {
   margin: 1rem;
-  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */
