@@ -21,7 +21,7 @@ You can write functions in the function syntax or by using an arrow function. Ar
 function fnName (parameters) {/*statements to be executed when called*/}
 const fnName = (parameters) => {/*statements*/}
 //same as
-const variableName = fnName(parameters) {/*statements*/}
+//const variableName = fnName(parameters) {/*statements*/}
 
 /************************************************************************************************************
                                           Exercises
