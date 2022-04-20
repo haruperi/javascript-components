@@ -1,6 +1,6 @@
 'use strict'
 
-import {datatypes} from "./fundamentals/js1-data-types.js";
+import {dataTypesLevel1, dataTypesLevel2, dataTypesLevel3} from "./fundamentals/js1-data-types.js";
 
 
-datatypes()
+dataTypesLevel3()
